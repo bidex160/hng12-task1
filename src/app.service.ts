@@ -39,7 +39,7 @@ export class AppService {
     return sum === num;
   }
 
-  async funFact(num: number): Promise<any> {
+  async funFact(num: number): Promise<string> {
     try {
       const response = await firstValueFrom(
         this.httpService.get(`http://numbersapi.com/${num}/math`).pipe(

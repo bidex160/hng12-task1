@@ -14,7 +14,7 @@ A Get request API, that returns the below response in json format with status co
 ## Project setup
 
 ```bash
-$ git clone https://github.com/bidex160/hngi12-task1.git
+$ git clone https://github.com/bidex160/hng12-task1.git
 
 $ npm install
 ```
@@ -32,7 +32,7 @@ $ npm run start
 
 ## URL
 ```bash
- https://hngi12-task1.onrender.com/
+ https://hng12-task1-jspn.onrender.com/api/classify-number
 ```
 
 ## Response Format:

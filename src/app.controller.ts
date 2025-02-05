@@ -17,11 +17,6 @@ export class AppController {
         number: 'alphabet',
         error: true,
       });
-    if (classifyNumber < 1)
-      return res.status(200).json({
-        number: 'negative number',
-        error: true,
-      });
 
     const properties: string[] = [];
     if (this.appService.isArmstrong(classifyNumber))

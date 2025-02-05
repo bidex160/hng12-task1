@@ -43,13 +43,11 @@ export class AppService {
   async funFact(num: number): Promise<string> {
     try {
       const response = await firstValueFrom(
-        this.httpService
-          .get(`http://numbersapi.com/${num}/math`, { timeout: 250 })
-          .pipe(
-            catchError((error) => {
-              throw error;
-            }),
-          ),
+        this.httpService.get(`http://numbersapi.com/${num}/math`).pipe(
+          catchError((error) => {
+            throw error;
+          }),
+        ),
       );
       // Handle the response
       return response.data as string;

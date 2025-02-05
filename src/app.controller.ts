@@ -11,11 +11,11 @@ export class AppController {
     @Query('number') number: string,
     @Res() res: Response,
   ) {
-    const classifyNumber = parseInt(number);
-    if (isNaN(classifyNumber))
+    const classifyNumber = +number;
+    if (!Number.isInteger(classifyNumber))
       return res.status(400).json({
         error: true,
-        number: number,
+        number: 'alphabet',
       });
 
     const properties: string[] = [];

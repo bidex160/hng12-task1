@@ -13,7 +13,7 @@ export class AppController {
   ) {
     const classifyNumber = parseInt(number);
     if (isNaN(classifyNumber))
-      return res.status(200).json({
+      return res.status(400).json({
         number: 'alphabet',
         error: true,
       });

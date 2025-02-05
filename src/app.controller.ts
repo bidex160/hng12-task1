@@ -14,8 +14,8 @@ export class AppController {
     const classifyNumber = parseInt(number);
     if (isNaN(classifyNumber))
       return res.status(400).json({
-        number: 'alphabet',
         error: true,
+        number: number,
       });
 
     const properties: string[] = [];

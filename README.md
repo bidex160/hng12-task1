@@ -14,7 +14,7 @@ A Get request API, that returns the below response in json format with status co
 ## Project setup
 
 ```bash
-$ git clone s.git
+$ git clone https://github.com/bidex160/hng12-task1
 
 $ npm install
 ```
